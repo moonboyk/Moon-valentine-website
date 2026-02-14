@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+
+    /* Colors */
+    --primary-color: #e8212f;
+    --secondary-color: #ec4651;
+    --tertiary-color: #FEF8EC;
+
+    /* Font Size */
+
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.8rem;
+    --fs-h4: 1.7rem;
+
+    --fs-a: 1rem;
+    --fs-p: 1.5rem;
+
+    --fw-high: 700;
+    --fw-medium: 500;
+    --fw-normal : 400;
+
+    --nav-height: 50px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--tertiary-color);
+    margin: 0 auto;
+    padding: 2rem 8%;
+    font-size: 62.5%;
+    font-family: "Playwrite NZ Basic", cursive;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: var(--primary-color);
+}
+
+h1{
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-high);
+}
+
+h2{
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-medium);
+}
+
+h3{
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-medium);
+}
+
+h4{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-medium);
+}
+
+p{
+    font-size: var(--fs-p);
+    font-weight: var(--fw-normal);
+}
+
+ul{
+    text-decoration: none;
+}
+
+a{
+    font-size: var(--fs-a);
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: var(--fw-high);
+    display: inline-block;
+}
+
+li{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    list-style: none;
+}
+
+
+.btn{
+    width: 5rem;
+    transition: 0.5s;
+    border-radius: 25px;
+    padding: 0.5rem;
+    display: inline-block;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: var(--nav-height);
+}
+
+.navbar-container{
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* For U section */
+
+.for-u-section{
+    margin-bottom: 1rem;
+    height: 90vh;
+    position: relative;
+}
+
+.for-u-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    margin-bottom: 1rem;
+}
+
+
+.for-u-div .img1{
+    position: absolute;
+    top: 3rem;
+    left: -2rem;
+    z-index: -99;
+    transform: rotate(-10deg);
+}
+
+.for-u-div .img2{
+    position: absolute;
+    top: 3rem;
+    right: -2rem;
+    z-index: -99;
+    transform: rotate(45deg);
+}
+
+.for-u-btns{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Letter Layout */
+
+.letter-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-family: "Playwrite AT", cursive;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.letter-div .letter-heading{
+    font-family: "Playwrite NZ Basic", cursive;
+    margin-bottom: 1rem;
+}
+
+.letter-div .letter-img{
+    width: 600px;
+    height: 700px;
+    border-radius: 25px;
+}
+
+.letter-div .letter-content p{
+    width: 400px;
+    position: absolute;
+    top: 20rem;
+    right: 27rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.img3{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    transform: rotate(30deg);
+    z-index: -999;
+}
+
+.img4{
+    position: absolute;
+    top: 4rem;
+    left: -8rem;
+    z-index: -99;
+    transform: rotate(-90deg);
+}
+
+/* Music Layout */
+
+.music-section{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.music-div{
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 500px;
+    height: 700px;
+    border-radius: 25px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.5rem;
+}
+
+.img5{
+    margin-top: 1rem;
+    width: 350px;
+    height: auto;
+    border-radius: 25px;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 70%;
+    height: 6px;
+    background: var(--tertiary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: var(--secondary-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--tertiary-color);
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+i{
+    color: var(--tertiary-color);
+    font-size: 1.5rem;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+/* Animations */
+

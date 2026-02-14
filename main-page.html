@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON STAR</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/a2d8df9502.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- navigation layout -->
+        <nav>
+            <div class="logo-container">
+                <a href="logo">HARSHU</a>
+            </div>
+            <ul class="navbar-container">
+                <a href="#">For You</a>
+                <a href="#">Letter</a>
+                <a href="#">Music</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="for-u-section">
+            <div class="for-u-div">
+                <h1>Happy Valentine's Day Harshitha 🤍🖤</h1>
+                <p>You are My Sunshine</p>
+                <p>You are My Pretty Little Baby</p>
+                
+                <img class="img1" src="assets/rose-img.png" alt="">
+                <img class="img2" src="assets/tulip-img.png" alt="">
+                
+                <p>Will you be My Valentine?</p>
+            </div>
+            <div class="for-u-btns">
+                <a href="#" class="btn">Yes</a>
+                <a href="#" class="btn">No</a>
+            </div>
+        </section>
+
+        <section class="letter-section">
+            <div class="letter-div">
+                <h1 class="letter-heading">Letter For You</h1>
+                <img class="letter-img" src="assets/letter-img.jpg" alt="Letter">
+                <img class="img3" src="assets/lily1-img.png" alt="blue lily">
+                <img src="assets/butterfly.png" alt="" class="img4">
+                <div class="letter-content">
+                    <p>Happy Valentine's Day Harshitha. <br>
+                    You are so much Pretty and I adore you so much Harshu. <br>
+                    I'm Sorry for hurting you Everyday. <br>
+                    Eventhough you take care of me and support me Everyday without thinking about anything. <br>
+                    Thank you so muchhh Harshitha. <br>
+                    I LOVE You So Much.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-section">
+            <h1>Music For You</h1>
+            <div class="music-div">
+                <img src="assets/couple-img.jpg" alt="couple image" class="img5">
+                <audio id="song" src="assets/Edd_Sheeran_-_Perfect_(mp3.pm).mp3" type="audio/mpeg"></audio>
+                <input type="range" value="0" id="progress">
+
+                <!-- Controls -->
+                <div class="controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div onclick="playPause()"><i id="ctrlIcon" class="fa-solid fa-play"></i></div>
+                    <div><i class="fa-solid fa-forward"></i></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
